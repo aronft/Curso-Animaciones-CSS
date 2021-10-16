@@ -1,3 +1,36 @@
-body {
-  background: orange;
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 50%;
+  
+}
+
+
+
+
+.circle:first-child {
+  /* animation: circle1 1s infinite alternate; */
+  background:green;
+  
+}
+
+@keyframes  circle1 {
+    to {
+      width: 450px;
+      height:450px;
+    }
+}
+
+
+.circle:last-child {
+  background: yellow;
+  /* animation: circle2 1s infinite alternate; */
+}
+
+@keyframes circle2 {
+  to {
+    transform: scale(1.5);
+  }
 }
